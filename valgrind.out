@@ -1,0 +1,50 @@
+==5590== Memcheck, a memory error detector
+==5590== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5590== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==5590== Command: bin/mazewar -p 9999 -t util/temptemplate
+==5590== Parent PID: 5578
+==5590== 
+==5590== 
+==5590== FILE DESCRIPTORS: 8 open at exit.
+==5590== Open AF_INET socket 5: 0.0.0.0:9999 <-> unbound
+==5590==    at 0x49A690B: socket (syscall-template.S:78)
+==5590==    by 0x10FE5B: open_listenfd (csapp.c:1015)
+==5590==    by 0x10FFB9: Open_listenfd (csapp.c:1062)
+==5590==    by 0x10C329: main (main.c:169)
+==5590== 
+==5590== Open file descriptor 13: /dev/shm/bxf_arena_5576 (deleted)
+==5590==    <inherited from parent>
+==5590== 
+==5590== Open file descriptor 12: /dev/shm/bxf_arena_5576 (deleted)
+==5590==    <inherited from parent>
+==5590== 
+==5590== Open file descriptor 4:
+==5590==    <inherited from parent>
+==5590== 
+==5590== Open file descriptor 3: /home/student/juyekim/hw5/valgrind.out
+==5590==    <inherited from parent>
+==5590== 
+==5590== Open file descriptor 2: /dev/pts/0
+==5590==    <inherited from parent>
+==5590== 
+==5590== Open file descriptor 1: /dev/pts/0
+==5590==    <inherited from parent>
+==5590== 
+==5590== Open file descriptor 0:
+==5590==    <inherited from parent>
+==5590== 
+==5590== 
+==5590== HEAP SUMMARY:
+==5590==     in use at exit: 4 bytes in 1 blocks
+==5590==   total heap usage: 34 allocs, 33 frees, 12,044 bytes allocated
+==5590== 
+==5590== LEAK SUMMARY:
+==5590==    definitely lost: 0 bytes in 0 blocks
+==5590==    indirectly lost: 0 bytes in 0 blocks
+==5590==      possibly lost: 0 bytes in 0 blocks
+==5590==    still reachable: 4 bytes in 1 blocks
+==5590==         suppressed: 0 bytes in 0 blocks
+==5590== Reachable blocks (those to which a pointer was found) are not shown.
+==5590== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==5590== 
+==5590== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
