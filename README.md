@@ -21,3 +21,5 @@ is to command your avatar to move around the maze, shoot other avatars, and accu
 util/mazewar -p 3333
 util/gclient -p <port> [-h <host>] [-u <username>] [-a <avatar>]
 ```
+
+![image](https://user-images.githubusercontent.com/51501680/163927344-1e2d19c8-d8b5-4718-8136-bd53af27075e.png)
